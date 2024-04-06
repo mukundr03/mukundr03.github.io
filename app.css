@@ -1,42 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
+    background-color: #000;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh;
     color: #fff;
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Space evenly between items */
+    align-items: center; /* Center items vertically */
+    width: 50%; /* Set width to 50% of viewport */
     padding: 20px;
-    text-align: center;
+    margin-right: auto; /* Add margin for the image */
+    margin-left: auto; /* Add margin for the text */
 }
-
-header h1 {
-    margin: 0;
+.container-double {
+    display: flex;
+    justify-content: space-between; /* Space evenly between items */
+    align-items: center; /* Center items vertically */
+    width: 90%; /* Set width to 50% of viewport */
+    padding: 20px;
+    margin-right: auto; /* Add margin for the image */
+    margin-left: auto; /* Add margin for the text */
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.profile-img {
+    border-radius: 15px;
+    width: 450px; /* Increase width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 100px; /* Add margin on the left */
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.profile-text {
+    font-size: 24px;
+    text-align: left; /* Align text to the left */
+    margin-right: 50px; /* Add margin on the right */
 }
-
-nav ul li a {
+.download-cv {
+    margin-top: 50px;
+}
+.btn {
+    background-color: #1311af;
     color: #fff;
-    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline */
 }
-
-main {
-    padding: 20px;
+.btn:hover {
+    background-color: #000;
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.highlight {
+    color: #1311af; /* Set color to match button */
+}
+.italic {
+    font-style: italic;
 }

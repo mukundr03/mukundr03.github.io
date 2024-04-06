@@ -3,7 +3,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: rgb(55, 134, 143);
+    background: #1311af;
   }
   .center {
     width: 100%;
@@ -27,7 +27,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgb(255, 255, 238);
-    font-family: poppins;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     color: rgb(36, 38, 34);
     display: flex;
@@ -100,3 +100,23 @@ body {
     display: flex;
     justify-content: space-evenly; /* Align buttons with equal spacing between */
   }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+header a:hover {
+    color: #1311af;
+}
