@@ -22,7 +22,7 @@ body {
     width: 100%; /* Make images fill the container */
     max-width: 95%; /* Ensure images don't exceed their container */
     height: auto; /* Maintain aspect ratio */
-    transition: transform 1s ease, border 1s ease; /* Smooth transition on hover */
+    transition: transform 0.5s ease, border 0.5s ease; /* Smooth transition on hover */
     border: 1px solid rgb(255, 255, 255); /* 1px solid black border */
 }
 
