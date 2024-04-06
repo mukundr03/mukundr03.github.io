@@ -23,3 +23,17 @@ header a {
 header a:hover {
     color: #1311af;
 }
+.right a:hover:after {
+    width: 25%;
+}
+.right a:after{
+    content: "";
+    position: absolute;
+    background-color: #1311af;
+    height: 3px;
+    width: 0%;
+    right: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+
