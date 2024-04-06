@@ -3,6 +3,7 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -14,26 +15,41 @@ header {
     display: flex;
     justify-content: space-between;
 }
-header a {
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 96%;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 30px 3%;
+    word-spacing: 20px;
+    justify-content: left;
+}
+
+header a, footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-    transition: color 0.3s;
+    position: relative;
 }
-header a:hover {
-    color: #1311af;
+header a:hover, footer a:hover {
+    color: #b6b6b6;
 }
-.right a:hover:after {
-    width: 25%;
+
+header a:hover::after {
+    width: 100%;
 }
-.right a:after{
+
+header a::after {
     content: "";
     position: absolute;
     background-color: #1311af;
     height: 3px;
-    width: 0%;
-    right: 0;
-    bottom: -3px;
-    transition: 0.3s;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
 }
 

@@ -34,6 +34,7 @@ body {
     width: 450px; /* Increase width of the image */
     height: auto; /* Maintain aspect ratio */
     margin-left: 100px; /* Add margin on the left */
+    transition: transform 0.5s ease, border 0.5s ease; /* Smooth transition on hover */
 }
 .profile-text {
     font-size: 24px;
@@ -55,6 +56,15 @@ body {
 }
 .btn:hover {
     background-color: #000;
+}
+.heading {
+    transition: transform 0.5s ease, border 0.5s ease; /* Smooth transition on hover */
+}
+.heading:hover {
+    transform: scale(1.05);
+}
+.profile-img:hover {
+    transform: scale(1.05);
 }
 .highlight {
     color: #1311af; /* Set color to match button */
