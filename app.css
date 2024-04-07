@@ -20,14 +20,23 @@ body {
     margin-right: auto; /* Add margin for the image */
     margin-left: auto; /* Add margin for the text */
 }
-.container-double {
+.container-left {
     display: flex;
-    justify-content: space-between; /* Space evenly between items */
-    align-items: center; /* Center items vertically */
-    width: 90%; /* Set width to 50% of viewport */
+    justify-content: right; /* Space evenly between items */
+    align-items: left; /* Center items vertically */
+    width: 45%; /* Set width to 50% of viewport */
     padding: 20px;
     margin-right: auto; /* Add margin for the image */
+    margin-left: 5%; /* Add margin for the text */
+}
+.container-double {
+    display: flex;
+    width: 50%; /* Set width to 50% of viewport */
+    padding: 60px;
+    margin-right: auto; /* Add margin for the image */
     margin-left: auto; /* Add margin for the text */
+    flex-direction: column;
+    height: 100%;
 }
 .profile-img {
     border-radius: 15px;
@@ -36,10 +45,31 @@ body {
     margin-left: 100px; /* Add margin on the left */
     transition: transform 0.5s ease, border 0.5s ease; /* Smooth transition on hover */
 }
+.right-img {
+    border-radius: 15px;
+    width: 600px; /* Increase width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 100px; /* Add margin on the left */
+    align-items: right;
+    transition: transform 0.5s ease, border 0.5s ease; /* Smooth transition on hover */
+}
 .profile-text {
     font-size: 24px;
     text-align: left; /* Align text to the left */
     margin-right: 50px; /* Add margin on the right */
+}
+.left-text {
+    flex: 1;
+    font-size: 24px;
+    text-align: left; /* Align text to the left */
+    margin-right: 50px; /* Add margin on the right */
+}
+.double-text {
+    width: 80%;
+    flex: 1;
+    font-size: 24px;
+    text-align: left; /* Align text to the left */
+    margin-left: 5%; /* Add margin on the right */
 }
 .download-cv {
     margin-top: 50px;
@@ -63,7 +93,7 @@ body {
 .heading:hover {
     transform: scale(1.05);
 }
-.profile-img:hover {
+.profile-img:hover, .right-img:hover {
     transform: scale(1.05);
 }
 .highlight {
@@ -71,4 +101,13 @@ body {
 }
 .italic {
     font-style: italic;
+}
+.outside-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s; /* Add transition for color change */
+    font-weight: 800;
+}
+.outside-link:hover {
+    color: #b6b6b6;
 }

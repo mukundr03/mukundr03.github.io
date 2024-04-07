@@ -29,3 +29,31 @@ body {
 .image-grid img:hover {
     transform: scale(1.1); /* Zoom in slightly on hover */
 }
+
+.gallery-column {
+    position: relative;
+    width: 50%; /* Set column width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-radius: 15px; /* Rounded corners */
+    transition: 0.3s; /* Smooth transition for scrolling */
+    right: 7%; /* Move to the left */
+    top: 35%; /* Move down a bit */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px;
+    height: 160%; /* Increase height, adjusting for the top offset */
+}
+
+.gallery-column:hover {
+    overflow-y: scroll; /* Enable scrolling on hover */
+}
+.gallery-column img:hover {
+    transform: scale(1.05);
+}
+.gallery-column img {
+    border-radius: 10px;
+    width: 100%; /* Make images fill the grid cell */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.5s ease, border 0.5s ease; /* Smooth transition on hover */
+}
